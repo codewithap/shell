@@ -49,4 +49,6 @@ def res():
   out = subprocess.getoutput(cmd)
   return f"{out}"
 
-app.run(host = "0.0.0.0")
+if __name__ == "__main__":
+
+    app.run(debug = True, host = "0.0.0.0")
